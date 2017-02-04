@@ -7,3 +7,12 @@
 
 ---
 
+- name: 'Prince | Configure license.'
+  become: yes
+  template:
+    src: '{{ prince_license_template }}'
+    dest: '/usr/local/lib/prince/license/license.dat'
+    owner: 'root'
+    group: 'root'
+    mode: '0644'
+  when: '{{ prince_license_template }}'
