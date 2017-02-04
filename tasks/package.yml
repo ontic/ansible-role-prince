@@ -17,13 +17,13 @@
 - name: 'Prince | Debian | Install Prince.'
   become: yes
   apt:
-    deb: '{{ prince__url }}'
+    deb: '{{ prince_url }}'
     state: '{{ prince_state }}'
   when: '{{ ansible_os_family == "Debian" }}'
 
 - name: 'Prince | RedHat | Install Prince.'
   become: yes
   yum:
-    name: '{{ prince__url }}'
+    name: '{{ prince_url }}'
     state: '{{ prince_state }}'
   when: '{{ ansible_os_family == "RedHat" }}'
