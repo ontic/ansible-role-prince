@@ -11,4 +11,4 @@
     owner: 'root'
     group: 'root'
     mode: '0644'
-  when: 'prince_license_template'
+  when: 'prince_license_template | default(None) != None'
