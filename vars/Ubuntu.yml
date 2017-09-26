@@ -1,0 +1,6 @@
+# Copyright (c) Ontic. (http://www.ontic.com.au). All rights reserved.
+# See the COPYING file bundled with this package for license details.
+
+---
+
+prince_url: 'https://www.princexml.com/download/prince_{{ prince_version }}_{{ ansible_distribution | lower }}{{ ansible_distribution_version }}_{{ "amd64" if ansible_architecture == "x86_64" else "i386" }}.deb'
