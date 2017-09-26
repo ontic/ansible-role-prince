@@ -3,4 +3,4 @@
 
 ---
 
-prince_url: 'https://www.princexml.com/download/prince_{{ prince_version }}_{{ ansible_distribution | lower }}8.0_{{ "amd64" if ansible_architecture == "x86_64" else "i386" }}.deb'
+prince_url: 'https://www.princexml.com/download/prince_{{ prince_version }}_ubuntu16.04_{{ "amd64" if ansible_architecture == "x86_64" else "i386" }}.deb'
