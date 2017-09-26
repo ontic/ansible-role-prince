@@ -22,7 +22,7 @@ before_install:
 
 script:
   - '${PWD}/tests/test.sh test'
-  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm which prince'
+  - 'docker exec --tty ${container_id} env TERM=xterm which prince'
   - 'docker exec --tty ${container_id} env TERM=xterm prince --version'
 
 notifications:
