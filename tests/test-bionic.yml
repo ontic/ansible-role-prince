@@ -7,10 +7,10 @@
   vars:
     prince_version: '20180518-1'
   pre_tasks:
-    - name: 'Update and upgrade apt packages'
+    - name: 'Install libc'
       become: true
       apt:
-        upgrade: yes
+        name: 'libc++-dev'
         update_cache: yes
   roles:
     - { role: 'role_under_test' }
