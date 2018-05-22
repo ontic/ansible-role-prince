@@ -15,13 +15,13 @@
     - 'package'
     - 'configure'
 
-- import_task: 'package.yml'
+- import_tasks: 'package.yml'
   tags:
     - 'prince'
     - 'prince-package'
     - 'package'
 
-- import_task: 'configure.yml'
+- import_tasks: 'configure.yml'
   tags:
     - 'prince'
     - 'prince-configure'
