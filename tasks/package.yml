@@ -15,7 +15,7 @@
   apt:
     deb: '{{ prince_url }}'
     state: '{{ prince_state }}'
-    force: yes
+    install_recommends: yes
   when: 'ansible_os_family == "Debian"'
 
 - name: 'Prince | RedHat | Install Prince.'
