@@ -6,11 +6,5 @@
 - hosts: 'localhost'
   vars:
     prince_version: '20180518-1'
-  pre_tasks:
-    - name: 'Install libc'
-      become: true
-      apt:
-        name: 'libc++-dev'
-        update_cache: yes
   roles:
     - { role: 'role_under_test' }
