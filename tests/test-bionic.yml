@@ -4,5 +4,7 @@
 ---
 
 - hosts: 'localhost'
+  vars:
+    prince_version: '20180518-1'
   roles:
     - { role: 'role_under_test' }
