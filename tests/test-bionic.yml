@@ -6,7 +6,7 @@
 - hosts: 'localhost'
   vars:
     prince_version: '20180518-1'
-  tasks:
+  pre_tasks:
     - name: 'Update and upgrade apt packages'
       become: true
       apt:
