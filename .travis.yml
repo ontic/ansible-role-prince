@@ -10,6 +10,7 @@ env:
     version: '7'
   - distribution: 'debian'
     version: '9'
+    playbook: 'test-stretch.yml'
   - distribution: 'ubuntu'
     version: '16.04'
   - distribution: 'ubuntu'
