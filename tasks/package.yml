@@ -3,14 +3,11 @@
 
 ---
 
-- name: 'Prince | Debian | Install Dependencies.'
+- name: 'Prince | Debian | Install HTTPS transport.'
   become: yes
   apt:
     name: 'apt-transport-https'
     state: 'present'
-  with_items:
-    - 'apt-transport-https'
-    - 'xz-utils'
   when: 'ansible_os_family == "Debian"'
 
 - name: 'Prince | Debian | Install Prince.'
